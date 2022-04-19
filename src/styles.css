@@ -1,0 +1,47 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 60px;
+  animation: flipTitle 2s;
+}
+
+.containerAction{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@keyframes flipTitle {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+  }
+}
+
+.btnBuscar{
+  top: 10px;
+  bottom: 10px;
+}
+
+.cardResult{
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.txtAddr{
+  margin-bottom: 10px;
+}
